@@ -1,0 +1,19 @@
+name: Idea
+description: Suggest a feature or a change.
+labels: [idea]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The situation or workflow where Bubbles falls short today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: input
+    id: version
+    attributes:
+      label: Bubbles version

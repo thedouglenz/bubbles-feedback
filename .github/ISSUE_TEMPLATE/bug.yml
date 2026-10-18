@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in Bubbles doesn't work the way it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: This tracker is public. Don't include secrets, private code, or agent transcripts.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create a bubble…
+        2. Start a task with Claude Code…
+  - type: dropdown
+    id: harness
+    attributes:
+      label: Harness
+      options: [Claude Code, Codex, Both, Not specific to a harness]
+  - type: input
+    id: version
+    attributes:
+      label: Bubbles version
+      description: Bubbles → About Bubbles. Filled in when you use Help → Report a Bug….
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots help. Harness versions (`claude --version`, `codex --version`) too.
